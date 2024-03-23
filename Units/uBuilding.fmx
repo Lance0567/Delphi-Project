@@ -1,0 +1,150 @@
+object BSM: TBSM
+  Left = 0
+  Top = 0
+  Caption = 'Building Structure Module'
+  ClientHeight = 600
+  ClientWidth = 532
+  Fill.Color = xFF545B5B
+  Fill.Kind = Solid
+  Position = DesktopCenter
+  StyleBook = StartUp.MaterialBlue
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object ToolBar1: TToolBar
+    Size.Width = 532.000000000000000000
+    Size.Height = 97.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object lytTop: TLayout
+      Align = Top
+      Size.Width = 532.000000000000000000
+      Size.Height = 38.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object Button1: TButton
+        Align = Left
+        StyledSettings = [Family, Style, FontColor]
+        Size.Width = 57.000000000000000000
+        Size.Height = 38.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'addtoolbutton'
+        TabOrder = 0
+        Text = 'Button1'
+        TextSettings.Font.Size = 1.000000000000000000
+        TextSettings.Trimming = None
+      end
+      object Label1: TLabel
+        Align = Center
+        StyledSettings = [Family, Style, FontColor]
+        Size.Width = 157.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 20.000000000000000000
+        TextSettings.Trimming = None
+        Text = 'Building Form'
+        TabOrder = 1
+        object Button3: TButton
+          Align = Right
+          Position.X = 132.000000000000000000
+          Size.Width = 25.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'arrowdowntoolbutton'
+          TabOrder = 2
+          Text = 'Button3'
+          TextSettings.Trimming = None
+        end
+      end
+      object Button2: TButton
+        Align = Right
+        Position.X = 480.000000000000000000
+        Size.Width = 52.000000000000000000
+        Size.Height = 38.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'optionstoolbutton'
+        TabOrder = 2
+        Text = 'Button2'
+        TextSettings.Trimming = None
+      end
+    end
+    object lytBottom: TLayout
+      Align = Bottom
+      Position.Y = 64.000000000000000000
+      Size.Width = 532.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object Button4: TButton
+        Align = Left
+        Size.Width = 57.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'refreshtoolbutton'
+        TabOrder = 0
+        Text = 'Button4'
+        TextSettings.Trimming = None
+      end
+      object Layout1: TLayout
+        Align = Center
+        Size.Width = 155.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object Button5: TButton
+          Align = Left
+          Size.Width = 80.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'Button5Style1'
+          TabOrder = 1
+          Text = 'Button5'
+          TextSettings.Trimming = None
+        end
+        object Button7: TButton
+          Align = Left
+          Margins.Left = -2.000000000000000000
+          Position.X = 78.000000000000000000
+          Size.Width = 80.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'Button7Style1'
+          TabOrder = 0
+          Text = 'Button5'
+          TextSettings.Trimming = None
+        end
+      end
+      object Image1: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Align = Right
+        Position.X = 482.000000000000000000
+        Size.Width = 50.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+    object eSearch: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Center
+      TabOrder = 2
+      Size.Width = 506.000000000000000000
+      Size.Height = 27.000000000000000000
+      Size.PlatformDefault = False
+      TextPrompt = 'Search'
+    end
+  end
+  object ListView1: TListView
+    ItemAppearanceClassName = 'TListItemAppearance'
+    ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
+    HeaderAppearanceClassName = 'TListHeaderObjects'
+    FooterAppearanceClassName = 'TListHeaderObjects'
+    Align = Client
+    Size.Width = 532.000000000000000000
+    Size.Height = 503.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+  end
+end
